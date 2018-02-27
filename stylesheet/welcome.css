@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    font: 400 18px "Source Sans Pro";
+    line-height: 1;
+    background-image: linear-gradient(to right, #0AB977, #30E3E0);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000;
+}
+.makespace {
+    display: block;
+    margin-top: 4rem;
+}
+.container {
+    width: 25rem;
+    margin: 1rem auto;
+    border: .05rem solid rgba(0,0,0,.3);
+    background: rgba(255,255,255,.3);
+    border-radius: .5rem;
+}
+.logo {
+    text-align: center;
+    font: 400 2rem "Lobster";
+    padding-top: .5rem;
+}
+.logo span {
+    opacity: .6;
+}
+h1 {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font: 300 1.5rem "Source Sans Pro";
+    width: 100%;
+    padding-bottom: .5rem;
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+}
+.row label {
+    width: 35%;
+    display: inline-block;
+    padding: 1rem .5rem;
+    background: rgba(0,0,0,.1);
+    border-right: .05rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: all .3s;
+}
+.row input {
+    width: 65%;
+    display: inline-block;
+    background: transparent;
+    padding: 0 1rem;
+    font: 400 1rem "Source Sans Pro";
+    transition: all .3s;
+    height: 3rem;
+}
+.row input:focus {
+    background: rgba(255,255,255,.8);
+}
+.row input[type="submit"] {
+    width: 100%;
+    height: 3rem;
+    font: 400 1rem "Source Sans Pro";
+    background: rgba(0,0,0,.1);
+    transition: all .3s;
+    cursor: pointer;
+}
+.row label:hover, .row input[type="submit"]:hover, .row input[type="submit"]:focus {
+    background: rgba(0,0,0,.15);
+}
+.link {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    font-size: .9rem;
+}
+.link a {
+    color: #0D3023;
+    text-decoration: underline;
+}
+.link a:hover {
+    text-decoration: none;
+}
+.error {
+    width: 25rem;
+    margin: 0 auto;
+    padding: .5rem;
+    background: rgba(180,47,47,.7);
+    color: #fff;
+    border-radius: .5rem;
+    border: .05rem solid rgba(0,0,0,.3);
+    font-size: .8rem;
+}
+.container .paste-info {
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+    width: 100%;
+    display: block;
+    padding: .5rem;
+}
+.paste-info span {
+    font-weight: 700;
+}
+.container .paste {
+    width: 100%;
+    display: block;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}

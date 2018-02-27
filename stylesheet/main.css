@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    font: 400 18px "Source Sans Pro";
+    line-height: 1;
+    background: #fff;
+    color: #000;
+}
+a {
+    color: #229593;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    background-image: linear-gradient(to right, #0AB977, #30E3E0);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 .3rem .1rem rgba(0,0,0,.3);
+}
+.header .container {
+    width: 774px;
+    margin: 0 auto;
+    display: block;
+}
+.float_left {
+    float: left;
+    display: block;
+}
+.float_right {
+    float: right;
+    display: block;
+}
+.logo {
+    font: 400 1.52rem "Lobster";
+    display: inline-block;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    color: #000;
+    transition: all .3s;
+    margin-right: 1rem;
+}
+.logo span {
+    opacity: .6;
+}
+.logo:hover, .logo:focus {
+    background: rgba(0,0,0,.1);
+}
+.dashboard {
+    padding: 1.11rem 0;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.5);
+    display: inline-block;
+    font-size: .9rem;
+}
+.dashboard span {
+    color: rgba(0,0,0,.7);
+}
+.dashboard span::after {
+    content: "/";
+    margin-left: .5rem;
+}
+.dashboard a {
+    margin-left: .5rem;
+    display: inline-block;
+    color: rgba(0,0,0,.7);
+}
+.makespace {
+    margin-top: 4.32rem;
+    display: block;
+}
+.content {
+    clear: both;
+    margin: 0 auto 1.22rem;
+    width: 25rem;
+}
+.content form, .box {
+    width: 100%;
+    border: .05rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+.content form {
+    background: rgba(0,0,0,.05);
+}
+.box {
+    background: #fff;
+}
+.content h1 {
+    font: 300 1.5rem "Source Sans Pro";
+    text-transform: uppercase;
+    padding: .5rem 0;
+    text-align: center;
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+    display: block;
+    width: 100%;
+}
+.content form textarea {
+    resize: vertical;
+    min-height: 6.5rem;
+    width: 100%;
+    padding: .5rem;
+    font: 400 .9rem "Source Sans Pro";
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+    overflow: scroll;
+    background: transparent;
+    transition: all .3s;
+    display: block;
+}
+.content form textarea:focus {
+    background: #fff;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.row p.option {
+    width: 50%;
+    display: inline-block;
+}
+.row label {
+    padding: 0;
+    display: inline-block;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.row label:first-child {
+    margin-left: 1rem;
+    margin-right: .5rem;
+}
+.row p.button {
+    height: 3rem;
+    width: 50%;
+}
+.button input {
+    height: calc(100% - .05rem);
+    width: 100%;
+    border-left: .05rem solid rgba(0,0,0,.3);
+    border-bottom-right-radius: .5rem;
+    font: 400 1rem "Source Sans Pro";
+    background: rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: all .3s;
+}
+.button input:hover, .button input:focus {
+    background: rgba(0,0,0,.2);
+}
+.error {
+    width: 25rem;
+    margin: 0 auto;
+    padding: .5rem;
+    background: rgba(180,47,47,.7);
+    color: #fff;
+    border-radius: .5rem;
+    border: .05rem solid rgba(0,0,0,.3);
+    font-size: .8rem;
+}
+.box h1 {
+    background: rgba(0,0,0,.05);
+}
+.box ul {
+    list-style: none;
+}
+.box li {
+    display: block;
+    padding: .5rem;
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+}
+.box li:last-child {
+    border-bottom: none;
+}
+.box h2 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    display: block;
+    color: #457;
+    line-height: 1.1;
+    margin-bottom: .2rem;
+}
+.no-posts {
+    padding: .5rem;
+}
