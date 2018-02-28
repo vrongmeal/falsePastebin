@@ -113,25 +113,57 @@ a:hover {
     background: transparent;
     transition: all .3s;
     display: block;
+    border-left: .05rem solid rgba(0,0,0,0);
 }
 .content form textarea:focus {
     background: #fff;
+    border-left: .05rem solid rgba(0,0,0,.3);
 }
 .row {
     display: flex;
     width: 100%;
 }
+.row input[type="text"] {
+    width: 65%;
+    height: 3rem;
+    background: transparent;
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+    transition: all .3s;
+    font: 400 1rem "Source Sans Pro";
+    padding: 1rem .8rem;
+    display: inline-block;
+}
+.row input[type="text"]:focus {
+    background: #fff;
+}
+.row label[for="title"] {
+    width: 35%;
+    display: inline-block;
+    padding: 1rem .5rem;
+    background: rgba(0,0,0,.1);
+    border-right: .05rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: all .3s;
+    margin: 0 0 0 0;
+    border-bottom: .05rem solid rgba(0,0,0,.3);
+}
+.row label:hover {
+    background: rgba(0,0,0,.15);
+}
 .row p.option {
     width: 50%;
     display: inline-block;
 }
-.row label {
+.row label.opt {
     padding: 0;
     display: inline-block;
     margin: 1rem 0;
     cursor: pointer;
 }
-.row label:first-child {
+.row label.opt:hover {
+    background: transparent;
+}
+.row label.opt:first-child {
     margin-left: 1rem;
     margin-right: .5rem;
 }
