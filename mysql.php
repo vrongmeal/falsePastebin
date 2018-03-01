@@ -2,9 +2,9 @@
 // Host will most probably be localhost
 $host = "localhost";
 // Enter the username
-$username = "root";
+$username = "";
 // Enter the password for username
-$password = "root";
+$password = "";
 // Enter the database name
 $db_name = "pastebin_clone";
 $link = new mysqli($host, $username, $password, $db_name);
