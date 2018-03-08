@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once("autodelete.php");
 require_once("mysql.php");
 $paste = "";
 $paste_err = "";
